@@ -1,0 +1,22 @@
+html {
+  background-color: #ffff;
+  min-height: 1000px;
+  font-family: 'Roboto Slab', serif;
+}
+
+h5 {
+  color: #bfdcae;
+}
+
+
+.main {
+  font-family: 'Roboto Slab', serif;
+  background-color: #ffff;
+  margin: 1% auto;
+}
+
+footer {
+  color: #206a5d;
+  text-align: center;
+  width: 100%
+}

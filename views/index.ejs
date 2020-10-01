@@ -1,0 +1,38 @@
+<%- include('partial/header'); -%>
+
+<div class="main container">
+  <div class="row justify-content-center pt-5">
+    <h1>Student Loans Calculator</h1>
+  </div>
+  <div class="row justify-content-center">
+    <h5>Do the math for free.</h5>
+  </div>
+  <form action="index.html" method="post">
+    <div class="form-group row justify-content-center">
+      <label for="amountBox" class="col-sm-2 col-form-label col-form-label-lg">Loan #1</label>
+      <div class="col-4">
+        <label class="sr-only" for="amountBox">Amount</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">$</div>
+          </div>
+          <input type="number" class="form-control" id="amountBox" placeholder="Amount">
+        </div>
+      </div>
+      <div class="col-2">
+        <label class="sr-only" for="aprBox">Amount</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">%</div>
+          </div>
+          <input type="text" class="form-control" id="aprBox" placeholder="APR">
+        </div>
+      </div>
+    </div>
+  </form>
+
+
+
+</div>
+
+<%- include('partial/footer'); -%>
