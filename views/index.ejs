@@ -2,15 +2,22 @@
 
 <div class="main container">
   <div class="row justify-content-center pt-5">
+    <span class = "logo-icon">
+        <i class="fas fa-graduation-cap"></i>
+        <i class="fas fa-calculator"></i>
+    </span>
+
+  </div>
+  <div class="row justify-content-center pt-2">
     <h1>Student Loans Calculator</h1>
   </div>
   <div class="row justify-content-center">
-    <h5>Do the math for free.</h5>
+    <h5>Do the math. For free.</h5>
   </div>
   <form action="index.html" method="post">
-    <div class="form-group row justify-content-center">
+    <div class="form-group row justify-content-center pt-3">
       <label for="amountBox" class="col-sm-2 col-form-label col-form-label-lg">Loan #1</label>
-      <div class="col-4">
+      <div class="col-3">
         <label class="sr-only" for="amountBox">Amount</label>
         <div class="input-group">
           <div class="input-group-prepend">
@@ -25,8 +32,11 @@
           <div class="input-group-prepend">
             <div class="input-group-text">%</div>
           </div>
-          <input type="text" class="form-control" id="aprBox" placeholder="APR">
+          <input type="number" class="form-control" id="aprBox" placeholder="APR">
         </div>
+      </div>
+      <div class="col-1">
+        <button type="submit" class="add btn">Add</button>
       </div>
     </div>
   </form>

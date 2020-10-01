@@ -1,22 +1,52 @@
+:root {
+  --dark-green: #206a5d;
+  --lime-green: #81b214;
+  --pastel-green: #bfdcae;
+  --off-white: #f1f1e8;
+}
+
 html {
   background-color: #ffff;
-  min-height: 1000px;
   font-family: 'Roboto Slab', serif;
+  height: 100%;
+}
+
+h1 {
+  font-size: 1.7rem;
+  color: var(--dark-green);
 }
 
 h5 {
-  color: #bfdcae;
+  font-size: 1rem;
+  color: var(--lime-green);
 }
 
+.logo-icon {
+  font-size: 3rem;
+  color: var(--dark-green);
+}
+
+.col-form-label {
+  text-align: right;
+}
 
 .main {
   font-family: 'Roboto Slab', serif;
+  font-size: 1rem;
   background-color: #ffff;
   margin: 1% auto;
 }
 
+.btn.add {
+  background-color: var(--dark-green);
+  color: var(--off-white);
+}
+
 footer {
-  color: #206a5d;
+  background-color: var(--dark-green);
+  color: var(--off-white);
+  position: fixed;
+  bottom: 0;
   text-align: center;
   width: 100%
 }
