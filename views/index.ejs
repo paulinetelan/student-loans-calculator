@@ -2,20 +2,21 @@
 
 <div class="main container">
   <div class="row justify-content-center pt-5">
-    <span class = "logo-icon">
+    <span class = "dark-green-text logo-icon">
         <i class="fas fa-graduation-cap"></i>
         <i class="fas fa-calculator"></i>
     </span>
 
   </div>
   <div class="row justify-content-center pt-2">
-    <h1>Student Loans Calculator</h1>
+    <h1 class="dark-green-text" >Student Loans Calculator</h1>
   </div>
   <div class="row justify-content-center">
     <h5>Do the math. For free.</h5>
   </div>
-  <form action="index.html" method="post">
+  <form action="/add" method="post">
     <div class="form-group row justify-content-center pt-3">
+      <!-- Loan label and amount box -->
       <label for="amountBox" class="col-sm-2 col-form-label col-form-label-lg">Loan #1</label>
       <div class="col-3">
         <label class="sr-only" for="amountBox">Amount</label>
@@ -23,20 +24,22 @@
           <div class="input-group-prepend">
             <div class="input-group-text">$</div>
           </div>
-          <input type="number" class="form-control" id="amountBox" placeholder="Amount">
+          <input type="number" class="form-control" id="amountBox" name="amount" placeholder="Amount">
         </div>
       </div>
+      <!-- APR box -->
       <div class="col-2">
-        <label class="sr-only" for="aprBox">Amount</label>
+        <label class="sr-only" for="aprBox">APR</label>
         <div class="input-group">
           <div class="input-group-prepend">
             <div class="input-group-text">%</div>
           </div>
-          <input type="number" class="form-control" id="aprBox" placeholder="APR">
+          <input type="number" class="form-control" id="aprBox" name="apr" placeholder="APR">
         </div>
       </div>
+      <!-- Add button -->
       <div class="col-1">
-        <button type="submit" class="add btn">Add</button>
+        <button type="submit" class="btn">Add</button>
       </div>
     </div>
   </form>

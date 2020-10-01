@@ -15,8 +15,18 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // tells app to use public folder for static files (e.g. images)
 app.use(express.static("public"));
 
-app.get("/", function(req, res){
+app.get("/", (req, res) => {
   res.render("index");
+});
+
+app.post("/add", (req, res) => {
+  let loan = {
+    amount: req.body.amount,
+    apr: req.body.apr
+  };
+
+  console.log(loan);
+
 });
 
 app.listen(3000, function(){

@@ -13,7 +13,6 @@ html {
 
 h1 {
   font-size: 1.7rem;
-  color: var(--dark-green);
 }
 
 h5 {
@@ -21,9 +20,12 @@ h5 {
   color: var(--lime-green);
 }
 
+.dark-green-text {
+  color: var(--dark-green);
+}
+
 .logo-icon {
   font-size: 3rem;
-  color: var(--dark-green);
 }
 
 .col-form-label {
@@ -37,7 +39,7 @@ h5 {
   margin: 1% auto;
 }
 
-.btn.add {
+.btn {
   background-color: var(--dark-green);
   color: var(--off-white);
 }
