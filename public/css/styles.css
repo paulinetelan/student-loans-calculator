@@ -5,14 +5,22 @@
   --off-white: #f1f1e8;
 }
 
-html {
-  background-color: #ffff;
+html, body{
+  background-color: var(--off-white);
   font-family: 'Roboto Slab', serif;
   height: 100%;
 }
 
 h1 {
-  font-size: 1.7rem;
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 h5 {
@@ -24,6 +32,11 @@ h5 {
   color: var(--dark-green);
 }
 
+.dark-green-bg {
+  background-color: var(--dark-green);
+  color: white;
+}
+
 .logo-icon {
   font-size: 3rem;
 }
@@ -32,21 +45,20 @@ h5 {
   text-align: right;
 }
 
-.main {
+.loans {
   font-family: 'Roboto Slab', serif;
   font-size: 1rem;
-  background-color: #ffff;
-  margin: 1% auto;
+  background-color: var(--off-white);
+  margin: 1% auto 3% auto;
 }
 
-.btn {
-  background-color: var(--dark-green);
-  color: var(--off-white);
+.left-col {
+  border-right-style: solid;
+  border-color: white;
+  border-width: thin;
 }
 
 footer {
-  background-color: var(--dark-green);
-  color: var(--off-white);
   position: fixed;
   bottom: 0;
   text-align: center;
