@@ -25,11 +25,6 @@ h3 {
 
 h5 {
   font-size: 1rem;
-  color: var(--lime-green);
-}
-
-.dark-green-text {
-  color: var(--dark-green);
 }
 
 .dark-green-bg {
@@ -41,15 +36,20 @@ h5 {
   font-size: 3rem;
 }
 
-.col-form-label {
+.loans .col-form-label {
   text-align: right;
 }
 
 .loans {
+  background-color: var(--off-white);
+  color: var(--dark-green);
   font-family: 'Roboto Slab', serif;
   font-size: 1rem;
-  background-color: var(--off-white);
-  margin: 1% auto 3% auto;
+  margin: 1% auto 0 auto;
+}
+
+.loans h5{
+  color: var(--lime-green);
 }
 
 .left-col {

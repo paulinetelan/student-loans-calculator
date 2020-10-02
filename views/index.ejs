@@ -2,14 +2,14 @@
 
 <div class="loans container">
   <div class="row justify-content-center pt-5">
-    <span class="dark-green-text logo-icon">
+    <span class="logo-icon">
       <i class="fas fa-graduation-cap"></i>
       <i class="fas fa-calculator"></i>
     </span>
 
   </div>
   <div class="row justify-content-center pt-3">
-    <h1 class="dark-green-text">Student Loans Calculator</h1>
+    <h1>Student Loans Calculator</h1>
   </div>
   <div class="row justify-content-center">
     <h5>School schmool.</h5>
@@ -21,19 +21,44 @@
   <% } %>
   <%# Add new loan row %>
   <%- include('partials/loan-add'); -%>
-
+  <div class="row justify-content-center pt-5">
+    <h2>So, what's the plan?</h2>
+  </div>
 </div>
 
 <div class="dark-green-bg container-fluid">
-  <div class="row justify-content-center pt-3">
-    <h2>What's the plan?</h2>
-  </div>
   <div class="row">
-    <div class="left-col col-6 mt-3">
-      <h3>Option 1: How long will it take for me to pay my loans?</h3>
+    <div class="left-col col-6 ">
+
+        <h3 class="row justify-content-start mt-4 pl-3">Opt 1: How long til I'm free?</h3>
+
+      <form action="index.html" method="post">
+        <div class="form-group row pt-3">
+          <label for="pmtBox" class="col-3 col-form-label">I wanna pay</label>
+          <div class="col-4 pl-0">
+            <label class="sr-only" for="pmtBox">Payment Amount</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">$</div>
+              </div>
+              <input type="number" class="form-control" id="pmtBox" name="amount" placeholder="0" min="0" autocomplete="off" required>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="op1FreqBtn" class="col-3 col-form-label">How often</label>
+          <div class="col-5 pl-0">
+            <%- include('partials/pmt-freq-button', {id: "op1FreqBtn"}); -%>
+          </div>
+        </div>
+      </form>
+      <h5 class="row justify-content-center pt-5">You will be free by</h5>
+      <h1 class="row justify-content-center pb-2">January 2022</h1>
+
+
     </div>
     <div class="col-6 mt-3">
-      <h3>Option 2: How much will I have to pay <%- include('partials/pmt-freq-button'); -%></h3>
+      <h3>Opt 2: How much will I have to pay <%- include('partials/pmt-freq-button', {id: "opt2FreqBtn"}); -%></h3>
     </div>
 
   </div>
