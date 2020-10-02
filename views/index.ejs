@@ -1,51 +1,26 @@
-<%- include('partial/header'); -%>
+<%- include('partials/header'); -%>
 
 <div class="main container">
   <div class="row justify-content-center pt-5">
-    <span class = "dark-green-text logo-icon">
-        <i class="fas fa-graduation-cap"></i>
-        <i class="fas fa-calculator"></i>
+    <span class="dark-green-text logo-icon">
+      <i class="fas fa-graduation-cap"></i>
+      <i class="fas fa-calculator"></i>
     </span>
 
   </div>
-  <div class="row justify-content-center pt-2">
-    <h1 class="dark-green-text" >Student Loans Calculator</h1>
+  <div class="row justify-content-center pt-3">
+    <h1 class="dark-green-text">Student Loans Calculator</h1>
   </div>
   <div class="row justify-content-center">
-    <h5>Do the math. For free.</h5>
+    <h5>School schmool.</h5>
   </div>
-  <form action="/add" method="post">
-    <div class="form-group row justify-content-center pt-3">
-      <!-- Loan label and amount box -->
-      <label for="amountBox" class="col-sm-2 col-form-label col-form-label-lg">Loan #1</label>
-      <div class="col-3">
-        <label class="sr-only" for="amountBox">Amount</label>
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <div class="input-group-text">$</div>
-          </div>
-          <input type="number" class="form-control" id="amountBox" name="amount" placeholder="Amount">
-        </div>
-      </div>
-      <!-- APR box -->
-      <div class="col-2">
-        <label class="sr-only" for="aprBox">APR</label>
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <div class="input-group-text">%</div>
-          </div>
-          <input type="number" class="form-control" id="aprBox" name="apr" placeholder="APR">
-        </div>
-      </div>
-      <!-- Add button -->
-      <div class="col-1">
-        <button type="submit" class="btn">Add</button>
-      </div>
-    </div>
-  </form>
 
-
+<!-- for previously entered loans -->
+  <% for (var i=0; i<loans.length; i++) { %>
+    <%- include('partials/loan-edit', {loan: loans[i], loanIndex: (i+1)}); -%>
+  <% } %>
+  <%- include('partials/loan-add'); -%>
 
 </div>
 
-<%- include('partial/footer'); -%>
+<%- include('partials/footer'); -%>

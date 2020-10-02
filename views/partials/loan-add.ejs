@@ -1,0 +1,32 @@
+<form action="/add" method="post">
+  <div class="form-group row justify-content-center mb-0">
+    <div class="col-2">
+      <!-- placeholder for alignment -->
+    </div>
+    <div class="col-3">
+      <label class="sr-only" for="amountBox">Amount</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">$</div>
+        </div>
+        <input type="number" class="form-control" id="amountBox" name="amount" placeholder="Amount" min="0" autocomplete="off" required>
+      </div>
+    </div>
+    <!-- APR box -->
+    <div class="col-2">
+      <label class="sr-only" for="aprBox">APR</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">%</div>
+        </div>
+        <input type="number" class="form-control" id="aprBox" name="apr" placeholder="APR" min="0" autocomplete="off" required>
+      </div>
+    </div>
+    <!-- Add button -->
+    <div class="col-1">
+      <button type="submit" class="btn">
+        Add
+      </button>
+    </div>
+  </div>
+</form>

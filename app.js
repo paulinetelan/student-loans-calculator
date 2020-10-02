@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  res.render("index");
+  res.render("index", {loans: loans});
 });
 
 app.post("/add", (req, res) => {
@@ -25,8 +25,10 @@ app.post("/add", (req, res) => {
     apr: req.body.apr
   };
 
-  console.log(loan);
+  loans.push(loan);
+  console.log(loans);
 
+  res.redirect("/");
 });
 
 app.listen(3000, function(){
